@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>Galaxy Health Insurance</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+     <!--Tab Icon link-->
+  <link rel="icon" href="images/glogoimage.jpeg">
+</head>
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav>
+            <!--Logo-->
+            <div class="logo">
+                <a href="index.html"><img src="images/glogoimage.jpeg"  height="60" alt="Logo"></a>
+            </div>
+            <!--MENU-->
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                </ul>
+            </div>
+            <!--BUTTON-->
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Galaxy Health Insurance</h1>
+            <p>Your health is our priority.</p>
+        </section>
+        <!-- Landing Page Top Banner Image -->
+        <section class="banner">
+            <img src="images/family-health-care-web-banner.jpg" alt="Banner Image">
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; 2024 Galaxy Health Insurance</p>
+    </footer>
+    <!--Java Script Link-->
+    <script src="js/main.js"></script>
+
+    <!--Speech Synthesiser TTS -->
+
+    <script> speechSynthesis.speak(new SpeechSynthesisUtterance("Hello, Welcome to Galaxy Health Insurance.")); </script>
+
+    <!--Speech Synthesiser for TTS CHROME Browser-->
+    <!--
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script>
+  window.onload = function() {
+    responsiveVoice.speak("Welcome");
+  };
+</script>
+-->
+    
+
+    <!--AI Chatbot Bubble Link-->
+
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "WD8ZyP9nuI2uGWXV85BxL",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="WD8ZyP9nuI2uGWXV85BxL"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+
+</body>
+</html>

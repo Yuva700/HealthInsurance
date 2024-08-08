@@ -1,0 +1,266 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* This makes the main content area take up remaining space */
+}
+
+header {
+    background: #00008B;
+    color: #fff;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    flex: 1;
+}
+
+header .logo img {
+    width: 90px; /* Adjust the width as needed */
+    height: 70px;
+    padding: 14px 0px 10px 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    position: relative;
+}
+
+header nav .menu {
+    display: flex;
+    justify-content: center;
+}
+
+header nav .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav .menu ul li {
+    margin: 0 10px;
+}
+
+header nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+/* Banner Styles */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero {
+    background: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer {
+    background: #00008B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    /* Ensure footer sticks to the bottom */
+}
+
+.about-us h1, h2{
+    text-align: center;
+}
+
+.about-us p{
+    padding: 0px 80px;
+}
+
+
+
+.about-images {
+    padding: 2rem 6rem;
+}
+
+.about-images .image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about-images .image-container img {
+    width: 48%; /* Adjust width as needed */
+    height: auto;
+}
+
+.profile-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.profile-cards .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-cards .card img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-cards .card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-cards .card-content h3 {
+    margin-bottom: 1rem;
+}
+
+
+/* Product Cards Styles */
+.products {
+    padding: 2rem;
+}
+
+.products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.products .product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    width: 500px; /* Adjust the max-width to reduce the size of the cards */ /*max-width*/
+    margin: 0 auto; /* Center the cards */
+    
+    
+
+}
+
+.products .product-card img {
+    width: 100%;
+    height: 80%;
+}
+
+.products .product-content {
+    padding: 1rem;
+}
+
+.products h1{
+    text-align: center;
+    font-weight:700;
+}
+
+
+footer {
+    background: #00008B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Ensure footer sticks to the bottom */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    header nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #00008B;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        
+    }
+
+    header nav .menu ul {
+        flex-direction: column;
+    }
+
+    header nav .menu ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header nav .menu.show {
+        display: flex;
+    }
+
+    .about-images .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-images .image-container img {
+        width: 100%;
+    }
+
+    .profile-cards .card,
+    .products .product-card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .products .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
