@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Galaxy Health Insurance</title>
+    <link rel="stylesheet" href="css/style.css">
+      <!--Tab Icon link-->
+  <link rel="icon" href="images/glogoimage.jpeg">
+      <!-- Include Font Awesome for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav>
+            <!--Logo-->
+            <div class="logo">
+                <a href="index.html"><img src="images/glogoimage.jpeg"  height="60" alt="Logo"></a>
+            </div>
+            <!--MENU-->
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                </ul>
+            </div>
+            <!--BUTTON-->
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h1>CONTACT US</h1>
+            
+            <p style="color: blue" >
+                <span class="phone-icon"><i class="fas fa-phone-alt"></i></span>
+                <strong>87654231</strong>
+            </p>
+            <p><strong>OR</strong></p>
+            <p style="color:blue">Fill the form and we will contact you</p>
+            
+            <div class="form-card">
+                <!--<form id="contactForm" onsubmit="showConfirmation(event)">
+                <form action="confirmation.html" method="post">-->
+                    <form id="contactForm" action="confirmation.html" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" placeholder="OPTIONAL">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile No:</label>
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="policy">Which policy do you need help with?</label>
+                            <input type="text" id="policy" name="policy" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="info">What info do you need?</label>
+                            <textarea id="info" name="info" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="communication">Communication Preference:</label>
+                            <select id="communication" name="communication" required>
+                                <option value="">Select ....</option>
+                                <option value="Call">Call</option>
+                                <option value="Email">Email</option>
+                                <option value="Message">Message</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Communication Time:</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select ....</option>
+                                <option value="Morning">Morning 10 - 12</option>
+                                <option value="Afternoon">Afternoon 12 - 3</option>
+                                <option value="Evening">Evening 3 - 6</option>
+                                <option value="Night">Night 6 - 8</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            <!--</div>-->
+            <!--
+            <div id="confirmationMessage" style="display: none;">
+                <p>We will contact you soon!</p>
+            </div>
+        -->
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Galaxy Health Insurance</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
